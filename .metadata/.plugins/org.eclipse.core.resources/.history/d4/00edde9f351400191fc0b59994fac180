@@ -1,0 +1,7 @@
+ui.application.url=https://demo.openmrs.org/openmrs/login.htm
+ui.application.username=Admin
+ui.application.password=Admin123
+ui.application.incorrectusername=abc
+ui.application.incorrectpassword=xyz
+ui.application.incorrectnewpassword=11111111
+ui.application.incorrectconfpassword=11111111

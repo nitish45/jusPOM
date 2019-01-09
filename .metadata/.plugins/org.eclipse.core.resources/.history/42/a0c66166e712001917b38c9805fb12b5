@@ -1,0 +1,42 @@
+package openMRS_Page_Locators;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class ChgPassword_Page_Locator {
+	WebDriver driver = null;
+	public ChgPassword_Page_Locator(WebDriver driver){
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
+	}
+		
+	@FindBy(id = "password")
+	private WebElement password;
+	
+	public WebElement getPassword(){
+		return password;
+	}
+	
+	@FindBy(id = "newpassword")
+	private WebElement newpassword;
+	
+	public WebElement getnewPassword(){
+		return newpassword;
+	}
+	
+	@FindBy(id = "confpassword")
+	private WebElement confpassword;
+	
+	public WebElement getconfPassword(){
+		return confpassword;
+	}
+	
+	@FindBy(id = "save")
+	private WebElement save;
+	
+	public WebElement getsave(){
+		return save;
+	}
+}
